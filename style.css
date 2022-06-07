@@ -1,3 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: beige;
+    display: grid;
+    grid-template: 
+    header header header auto
+    left-menu middle-menu right-menu 1fr /
+    1fr 1fr 1fr;
+}
+
+header {
+background-color: blue;
+}
+
+.left-menu {
+    background-color: blueviolet;
+}
+
+.middle-menu {
+    background-color: brown;
+}
+
+.right-menu {
+    background-color: aqua;
 }
