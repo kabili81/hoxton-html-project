@@ -14,9 +14,38 @@ body {
 }
 
 .header {
-background-color: blue;
+background-color: white;
 grid-area: header;
-height: 50px;
+display: grid;
+grid-template-columns: auto 1fr auto;
+gap: 3rem;
+padding: 0.5rem 1rem;
+height: 150px;
+}
+
+.header__left-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.header__middle-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.header__right-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.facebook-logo {
+    width: 40px;
 }
 
 .left-menu {
