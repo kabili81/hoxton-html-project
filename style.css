@@ -5,25 +5,31 @@
 }
 
 body {
+    height: 100vh;
     display: grid;
     grid-template: 
-    header header header auto
-    left-menu middle-menu right-menu 1fr /
-    1fr 1fr 1fr;
+     'header header header'auto
+    'left-menu middle-menu right-menu' 1fr /
+     1fr 1fr 1fr;
 }
 
-header {
+.header {
 background-color: blue;
+grid-area: header;
+height: 50px;
 }
 
 .left-menu {
     background-color: blueviolet;
+    grid-area: left-menu;
 }
 
 .middle-menu {
     background-color: brown;
+    grid-area: middle-menu;
 }
 
 .right-menu {
     background-color: aqua;
+    grid-area: right-menu;
 }
