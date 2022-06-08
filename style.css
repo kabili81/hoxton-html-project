@@ -26,6 +26,10 @@ button {
     background: none;
     border: none;
 }
+.header button span {
+    font-size: 1.5rem;
+    color: blue;
+}
 
 .header__left-menu {
     display: grid;
@@ -34,6 +38,24 @@ button {
     align-items: center;
 }
 
+.header__search {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.search-side {
+    background-color: #f0f3f4;
+    display: grid;
+    place-items: center;
+    padding: 3px;
+    color: rgb(142, 142, 142);
+
+}
+
+.header__search__search-icon {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 .header__middle-menu {
     display: grid;
     grid-auto-flow: column;
@@ -64,7 +86,7 @@ button {
 
 .left-menu__items {
     list-style: none;
-    padding-right: 1rem;
+    padding-right: 20rem;
     display: grid;
     grid: 0.5rem;
 }
@@ -74,9 +96,8 @@ button {
     display: grid;
     grid-template-columns: auto 1fr auto;
     padding: 0.2rem 1rem;
-    border-top-right-radius: 20px;
     align-items: center;
-    gap: 0.2rem;
+    gap: 0.5rem;
 } 
 
 .middle-menu {
