@@ -55,6 +55,25 @@ button {
 .header__search__search-icon {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+} 
+
+.header__search__search-icon span {
+    font-size: 1.2rem;
+}
+
+.header__search__bar {
+    border: none;
+    background-color: #f0f3f4;
+    padding: 0rem 0.5rem;
+    font-size: 1rem;
+}
+
+.header__search__expand {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.header__search__expand span {
+    font-size: 1.2rem;
 }
 .header__middle-menu {
     display: grid;
@@ -70,6 +89,26 @@ button {
     align-items: center;
 }
 
+.header__right-menu__profile {
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.header__right-menu__profile .container {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 0.5rem;  
+}
+
+.header__right-menu__profile .name {
+    font-size: 1rem;
+}
+
+.header__right-menu__profile img {
+    border-radius: 50%;
+}
 .facebook-logo {
     width: 40px;
 }
