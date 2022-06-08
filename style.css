@@ -55,6 +55,7 @@ button {
 .left-menu {
     background-color: blueviolet;
     grid-area: left-menu;
+    display: grid;
 }
 
 .middle-menu {
