@@ -53,9 +53,30 @@ button {
 }
 
 .left-menu {
-    background-color: blueviolet;
+   
     grid-area: left-menu;
     display: grid;
+}
+
+.left-menu__navigation {
+    padding: 0.5rem 0rem
+}
+
+.left-menu__items {
+    list-style: none;
+    padding-right: 1rem;
+    display: grid;
+    grid: 0.5rem;
+}
+
+.left-menu__items__link {
+    text-decoration: initial;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 0.2rem 1rem;
+    border-top-right-radius: 20px;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 .middle-menu {
