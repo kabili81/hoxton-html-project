@@ -10,7 +10,7 @@ body {
     grid-template: 
      'header header header'auto
     'left-menu middle-menu right-menu' 1fr /
-     1fr 1fr 1fr;
+     200px 1fr 200px;
 }
 
 .header {
@@ -81,7 +81,7 @@ button {
 .header__middle-menu {
     display: grid;
     grid-auto-flow: column;
-    gap: 0.5rem;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
 }
@@ -122,6 +122,7 @@ button {
    
     grid-area: left-menu;
     display: grid;
+    text-align: left;
 }
 
 .left-menu__navigation {
@@ -130,38 +131,43 @@ button {
 
 .left-menu__items {
     list-style: none;
-    padding-right: 20rem;
     display: grid;
     grid: 0.5rem;
 }
 
 .left-menu__item__link {
+    
     text-decoration: initial;
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr;
     padding: 0.2rem 1rem;
     align-items: center;
     gap: 0.5rem;
+    justify-content: start;
+    text-align: left;
 } 
 
 .middle-menu {
     
     grid-area: middle-menu;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 300px;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+    
     overflow: scroll;
-    padding: 1rem;
-    gap: 1rem;
+    padding: 3rem;
+    gap: 3rem;
 }
-.middle-menu-item {
-    border: solid 1px black;
-    border-radius: 2px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 20px 1fr auto;
-    gap: 5px;
-    align-items: center;
+
+.middle-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+.middle-menu__item img {
+    width: 100%;
+}
+.middle-menu__item {
+   
 }
 
 .right-menu {
