@@ -14,8 +14,7 @@ body {
 }
 
 .header {
-margin: 0px auto;
-max-width: 960px;
+
 background-color: white;
 grid-area: header;
 display: grid;
@@ -23,11 +22,6 @@ grid-template-columns: auto 1fr auto;
 gap: 3rem;
 padding: 0.5rem 1rem;
 
-}
-
-#header {
-    height: 300px;
-    width: 960px;
 }
 
 button {
@@ -40,7 +34,6 @@ button {
 }
 
 .header__left-menu {
-    margin-left: -350px;
     
     display: grid;
     grid-auto-flow: column;
@@ -90,10 +83,11 @@ button {
     grid-auto-flow: column;
     gap: 0.5rem;
     align-items: center;
+    justify-content: center;
 }
 
 .header__right-menu {
-    margin-right: -50;
+    
     display: grid;
     grid-auto-flow: column;
     gap: 0.5rem;
