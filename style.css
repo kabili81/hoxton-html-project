@@ -170,4 +170,29 @@ button {
 .right-menu {
     
     grid-area: right-menu;
+    display: grid;
+    text-align: left;
+    
 }
+
+.right-menu__navigation {
+    padding: 0.5rem 0rem
+}
+
+.right-menu__items {
+    list-style: none;
+    display: grid;
+    grid: 0.5rem;
+}
+
+.right-menu__item__link {
+    
+    text-decoration: initial;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0.2rem 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: start;
+    text-align: left;
+} 
