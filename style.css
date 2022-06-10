@@ -152,7 +152,7 @@ button {
     grid-area: middle-menu;
     display: grid;
     -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+    scrollbar-width: none;  /* Firefox */
     
     overflow: scroll;
     padding: 3rem;
@@ -165,9 +165,6 @@ button {
 
 .middle-menu__item img {
     width: 100%;
-}
-.middle-menu__item {
-   
 }
 
 .right-menu {
