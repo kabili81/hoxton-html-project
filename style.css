@@ -10,7 +10,7 @@ body {
     grid-template: 
      'header header header'auto
     'left-menu middle-menu right-menu' 1fr /
-     200px 1fr 200px;
+     200px 1fr 300px;
 }
 
 .header {
@@ -174,12 +174,18 @@ button {
     text-align: left;
     
 }
+.first-row {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+}
 
 .right-menu__navigation {
     padding: 0.5rem 0rem
 }
 
-.right-menu__items {
+.right-menu__item {
     list-style: none;
     display: grid;
     grid: 0.5rem;
