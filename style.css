@@ -168,6 +168,6 @@ button {
 }
 
 .right-menu {
-    background-color: aqua;
+    
     grid-area: right-menu;
 }
